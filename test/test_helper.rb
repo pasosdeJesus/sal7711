@@ -11,7 +11,7 @@ class ActiveSupport::TestCase
   set_fixture_class "sip/tsitio": Sip::Tsitio
 
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
-  fixtures :all
+  #fixtures :all
   
   #Rails.application.load_seed
 
