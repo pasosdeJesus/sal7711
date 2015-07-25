@@ -4,6 +4,7 @@ require 'test_helper'
 
 module Sip
   class TsitioTest < ActiveSupport::TestCase
+
     test "busca existente" do
       tsitio = Sip::Tsitio.where(id: 2).take
       assert_equal('URBANO', tsitio.nombre)

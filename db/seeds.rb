@@ -1,31 +1,16 @@
 # encoding: UTF-8
 
-connection = ActiveRecord::Base.connection();
+conexion = ActiveRecord::Base.connection();
 
-# Básicas de motor sip
-l = File.readlines(
-  Gem.loaded_specs['sip'].full_gem_path + "/db/datos-basicas.sql"
-)
-connection.execute(l.join("\n"))
-
-# Cambios a básicas de sip
-if File.exists?(Gem.loaded_specs['sal7711_gen'].full_gem_path + 
-                "/db/cambios-basicas.sql")
-	l = File.readlines(Gem.loaded_specs['sal7711_gen'].full_gem_path + 
-                "/db/cambios-basicas.sql")
-	connection.execute(l.join("\n"))
-end
-
-# Nuevas basicas de motor Sal7711Gen
-if File.exists?(Gem.loaded_specs['sal7711_gen'].full_gem_path + 
-                "/db/datos-basicas.sql")
-	l = File.readlines(Gem.loaded_specs['sal7711_gen'].full_gem_path + 
-                "/db/datos-basicas.sql")
-	connection.execute(l.join("\n"))
+# De motores y finalmente de este
+motor = ['sip', 'sal7711_gen', nil]
+motor.each do |m|
+    Sip::carga_semillas_sql(conexion, m, :cambios)
+    Sip::carga_semillas_sql(conexion, m, :datos)
 end
 
 # Usuario para primer ingreso sal7711 con clave sal7711
-connection.execute("INSERT INTO usuario 
+conexion.execute("INSERT INTO usuario 
   (nusuario, email, encrypted_password, password, 
     fechacreacion, created_at, updated_at, rol) 
   VALUES ('sal7711', 'sal7711@localhost', 
