@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 9bcb8b3e6859d28760cd54cf7a5b2624dbceab3a
+  revision: 77e1be5a5e9149e0a72949b93dd25494b73dc762
   specs:
     sal7711_gen (1.0.a2)
       rails
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/pasosdeJesus/sip.git
-  revision: 315e6b1f94e130fa276670e82e0de0cd8a1ac2c0
+  revision: d3407204e0a066702e6788968b2c7aa1f9e2db92
   specs:
     sip (2.0.a6)
       devise
@@ -61,7 +61,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.8)
-    arel (6.0.2)
+    arel (6.0.3)
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -116,7 +116,7 @@ GEM
       sass-rails (<= 5.0.1)
       sprockets (< 2.13)
     debug_inspector (0.0.2)
-    devise (3.5.1)
+    devise (3.5.2)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -129,7 +129,7 @@ GEM
     execjs (2.5.2)
     ffi (1.9.10)
     git-version-bump (0.15.1)
-    globalid (0.3.5)
+    globalid (0.3.6)
       activesupport (>= 4.1.0)
     hike (1.2.3)
     i18n (0.7.0)
@@ -160,7 +160,7 @@ GEM
     mime-types (2.6.1)
     mimemagic (0.3.0)
     mini_portile (0.6.2)
-    minitest (5.7.0)
+    minitest (5.8.0)
     multi_json (1.11.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
@@ -187,7 +187,7 @@ GEM
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
     rack (1.6.4)
-    rack-contrib (1.3.0)
+    rack-contrib (1.4.0)
       git-version-bump (~> 0.15)
       rack (~> 1.4)
     rack-test (0.6.3)
@@ -279,7 +279,7 @@ GEM
       tzinfo
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2015.5)
+    tzinfo-data (1.2015.6)
       tzinfo (>= 1.0.0)
     uglifier (2.7.1)
       execjs (>= 0.3.0)

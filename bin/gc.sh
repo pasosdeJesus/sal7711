@@ -30,11 +30,11 @@ if (test "$SININS" != "1") then {
 	} fi;
 } fi;
 
-#(RAILS_ENV=test rake db:drop db:setup db:migrate sip:indices)
-#if (test "$?" != "0") then {
-#	echo "No puede preparse base de prueba";
-#	exit 1;
-#} fi;
+(RAILS_ENV=test rake db:drop db:setup db:migrate sip:indices)
+if (test "$?" != "0") then {
+	echo "No puede preparse base de prueba";
+	exit 1;
+} fi;
 
 rake test
 if (test "$?" != "0") then {
