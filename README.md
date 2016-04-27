@@ -3,18 +3,16 @@
 
 Sistema para manejo de un archivo de prensa
 
-
 ### Requerimientos
-* Ruby version >= 2.2
-* PostgreSQL >= 9.4 con extensión unaccent disponible
-* Recomendado sobre adJ 5.6 (que incluye todos los componentes mencionados).  Las siguientes instrucciones suponen que opera en este ambiente.
 
+Ver <https://github.com/pasosdeJesus/sip/wiki/Requerimientos>
 
 ### Arquitectura
 
-Es una aplicación que emplea el motor genérico estilo Pasos de Jesús ```sip```
-Ver https://github.com/pasosdeJesus/sip
-y el motor sal7711_gen, ver https://github.com/pasosdeJesus/sal7711_gen
+Es una aplicación que emplea los motores genérico de SIVeL 2
+[sal7711_gen](https://github.com/pasosdeJesus/sal7711_gen)
+y  [sip](https://github.com/pasosdeJesus/sip)
+
 
 ## Uso
 
