@@ -15,7 +15,7 @@ gem "colorize"
 # Para generar CSS
 gem "sass"
 gem "sass-rails"
-#gem "compass-rails"
+gem "compass-rails"
 
 # Cuadros de selección para búsquedas
 gem 'chosen-rails'
@@ -26,6 +26,8 @@ gem 'lazybox'
 # Para convertir de tiff a jpg
 #gem "rmagick"
 
+gem "font-awesome-rails"
+#
 # Para generar PDF
 gem "prawn"
 
