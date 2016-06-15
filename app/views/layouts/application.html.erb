@@ -14,7 +14,7 @@
     <% end %>
   <% end %>
   <%= menu_group :pull => :right do %>
-    <%= menu_item "Documentacion", 
+    <%= menu_item "Documentacion", File.join(
         Rails.configuration.relative_url_root, '/acercade') %>
     <% if !current_usuario.nil? %>
       <%= drop_down "Administrar" do %>
