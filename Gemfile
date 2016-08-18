@@ -3,11 +3,13 @@ source 'https://rubygems.org'
 #ruby "2.2.2"
 
 # Rails (internacionalización)
-gem "rails", '~> 4.2.0'
+gem "rails", '~> 5.0.0'
 gem "rails-i18n"
 
 # Postgresql
 gem "pg"
+
+gem 'puma'
 
 # Colores en consola
 gem "colorize"
@@ -35,16 +37,15 @@ gem "prawn"
 gem "jbuilder"
 
 # Uglifier comprime recursos Javascript
-gem "uglifier", '>= 1.3.0'
+gem "uglifier"
 
 # CoffeeScript para recuersos .js.coffee y vistas
-gem "coffee-rails", '~> 4.1.0'
+gem "coffee-rails"
 
 # jquery como librería JavaScript
 gem "jquery-rails"
 
 gem "jquery-ui-rails"
-gem "jquery-ui-bootstrap-rails", git: "https://github.com/kristianmandrup/jquery-ui-bootstrap-rails"
 
 # Seguir enlaces más rápido. Ver: https://github.com/rails/turbolinks
 gem "turbolinks"
@@ -72,7 +73,7 @@ gem "will_paginate"
 gem 'twitter_cldr'
 
 # Maneja adjuntos
-gem "paperclip", "~> 4.1"
+gem "paperclip"
 
 # Zonas horarias
 gem "tzinfo"
@@ -115,6 +116,7 @@ group :test do
   # Lanza programas para examinar resultados
   gem "launchy"
 
+  gem 'rails-controller-testing'
 
   gem 'pry-rescue'
   gem 'pry-stack_explorer'

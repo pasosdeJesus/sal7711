@@ -17,4 +17,10 @@ config/database.yml
 /tmp
 *~
 public/assets/
-public/colchon-articulo/
+public/colchon-articulos/
+archivo/
+config/application.rb
+config/initializers/sip.rb
+config/routes.rb
+config/unicorn.conf.minimal.rb
+*swp
