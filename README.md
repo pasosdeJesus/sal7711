@@ -11,7 +11,7 @@ Ver <https://github.com/pasosdeJesus/sip/wiki/Requerimientos>
 
 ### Arquitectura
 
-Es una aplicación que emplea los motores genérico de SIVeL 2
+Es una aplicación que emplea los motores genéricos 
 [sal7711_gen](https://github.com/pasosdeJesus/sal7711_gen)
 y  [sip](https://github.com/pasosdeJesus/sip)
 
