@@ -25,6 +25,8 @@ module Sal7711
 
     config.active_record.schema_format = :sql
 
-    config.formato_fecha = 'yyyy-mm-dd'
+    config.x.url_colchon = 'colchon-articulos'
+
+    config.formato_fecha = 'dd/mm/yyyy'
   end
 end
