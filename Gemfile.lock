@@ -1,14 +1,14 @@
 GIT
-  remote: git://github.com/pasosdeJesus/sal7711_gen.git
-  revision: b68b3a360e1558001092cef11a7ad7c39d0e2658
+  remote: https://github.com/pasosdeJesus/sal7711_gen.git
+  revision: b2f457b99cbe2705b80d15bd08ff8d7944724928
   specs:
     sal7711_gen (1.0.b1)
       rails
       sip
 
 GIT
-  remote: git://github.com/pasosdeJesus/sip.git
-  revision: 838d79c5dd182210ac0ae1c045c48d6b270367c9
+  remote: https://github.com/pasosdeJesus/sip.git
+  revision: c52e5ece2d3b37f5e53407eeaf76317c7d02d42a
   specs:
     sip (2.0.b1)
       bootstrap-datepicker-rails
@@ -372,4 +372,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   1.12.5
+   1.13.0
