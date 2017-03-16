@@ -120,9 +120,10 @@ group :test do
 
   # Pruebas de regresión que no requieren javascript
   gem "capybara"
-  
+ 
+  gem 'simplecov' 
   # Envia resultados de pruebas desde travis a codeclimate
-  gem "codeclimate-test-reporter", require: nil
+  gem "codeclimate-test-reporter"
 end
 
 
