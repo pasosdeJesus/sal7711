@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 8648f033e309241a8b28e66fa980e2ead1b2900f
+  revision: 7c2f16ccda6a32c99799e852bf6cc1cd714310b7
   specs:
     sal7711_gen (1.0.b1)
       rails
@@ -250,7 +250,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.18.0)
     rake (12.0.0)
-    rb-fsevent (0.10.1)
+    rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     responders (2.4.0)
