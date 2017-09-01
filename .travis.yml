@@ -1,22 +1,20 @@
 language: ruby
 rvm:
         - 2.4.0
+addon:
+        postgresql: '9.6'
 notifications:
         email: false
 script: bundle exec rails test -b
-after_success: 
-        - CODECLIMATE_REPO_TOKEN=82e4de777b66e8692bac7cccbb0c327b9b900ba2573532a40644d361206e1ee0 bundle exec codeclimate-test-reporter 
 env:
         global:
                 - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 before_install: 
         - sudo locale-gen --no-archive es_CO.UTF-8
         - sudo /etc/init.d/postgresql stop
-        - sudo /etc/init.d/postgresql start 9.3
+        - sudo /etc/init.d/postgresql start 9.6
         - psql -c 'CREATE DATABASE sal7711_pru;' -U postgres
         - bundle install
-        - cp db/structure.sql db/structure.sql.conlock
-        - sed -e "s/SET lock_timeout = 0;//g" db/structure.sql.conlock >db/structure.sql
         - cp config/database.travis.yml config/database.yml
         - cp config/application.rb.plantilla config/application.rb
         - cp config/routes.rb.plantilla config/routes.rb
