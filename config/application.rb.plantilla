@@ -24,6 +24,8 @@ module Sal7711
 
     config.x.url_colchon = 'colchon-articulos'
 
-    config.formato_fecha = 'dd/mm/yyyy'
+    config.x.formato_fecha = 'dd/M/yyyy'
+
+    #config.relative_url_root = "/sal7711"
   end
 end
