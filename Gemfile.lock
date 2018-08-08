@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: e335e56454b5746f3ba7cd341d71517d38c35535
+  revision: 933c5c3af2e539f3fb2737a0ebe1ee0a0616aefe
   specs:
     sal7711_gen (1.0.b1)
       rails
@@ -112,7 +112,7 @@ GEM
     callsite (0.0.11)
     camertron-eprun (1.1.1)
     cancancan (2.2.0)
-    capybara (3.4.2)
+    capybara (3.5.1)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
@@ -154,7 +154,7 @@ GEM
       railties (>= 3.2, < 6.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    i18n (1.0.1)
+    i18n (1.1.0)
       concurrent-ruby (~> 1.0)
     interception (0.5)
     jbuilder (2.7.0)
