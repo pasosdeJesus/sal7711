@@ -1,15 +1,23 @@
 language: ruby
+
 rvm:
         - 2.4.0
+
 addon:
         postgresql: '9.6'
+
 notifications:
         email: false
-script: bundle exec rails test -b
+
 env:
         global:
                 - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+                - CC_TEST_REPORTER_ID=82e4de777b66e8692bac7cccbb0c327b9b900ba2573532a40644d361206e1ee0
+
 before_install: 
+        - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+        - chmod +x ./cc-test-reporter
+        - ./cc-test-reporter before-build
         - sudo locale-gen --no-archive es_CO.UTF-8
         - sudo /etc/init.d/postgresql stop
         - sudo /etc/init.d/postgresql start 9.6
@@ -19,6 +27,16 @@ before_install:
         - cp config/application.rb.plantilla config/application.rb
         - cp config/routes.rb.plantilla config/routes.rb
         - cp config/initializers/sip.rb.plantilla config/initializers/sip.rb
+        - cp db/structure.sql db/structure.sql.copia # travis no soporta PostreSQL 10
+        - sed -e 's/provider = libc,//g' db/structure.sql.copia > db/structure.sql 
         - rake db:setup
         - rake sip:indices
+
+script: 
+        - bundle exec rails test -b
+
+
+after_script:
+        - ./cc-test-reporter after-build -t simplecov --exit-code $TRAVIS_TEST_RESULT
+
 

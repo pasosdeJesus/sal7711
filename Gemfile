@@ -1,13 +1,18 @@
 source 'https://rubygems.org'
 
-#ruby "2.2.2"
-
 # Rails (internacionalización)
-gem "rails", '~> 5.1.0'
+#gem "rails", '~> 5.2.0'
+# Resuelve problema con minitest y rails 5.2.0
+gem "rails", '~> 5.2.0'
+
+gem 'bootsnap', '>=1.1.0', require: false
+
 gem "rails-i18n"
 
+gem 'bigdecimal'
+
 # Postgresql
-gem "pg"
+gem "pg"#, '~> 0.21'
 
 gem 'puma'
 
@@ -57,7 +62,8 @@ gem "bootstrap-datepicker-rails"
 gem "simple_form"
 
 # Formularios anidados (algunos con ajax)
-#gem "cocoon", git: "https://github.com/vtamara/cocoon.git"
+#gem "cocoon", git: "https://github.com/vtamara/cocoon.git", branch: 'new_id_with_ajax'
+
 
 # Autenticación y roles
 gem "devise"
@@ -76,7 +82,6 @@ gem "paperclip"
 
 # Zonas horarias
 gem "tzinfo"
-gem "tzinfo-data"
 
 # Motor de sistemas de información estilo Pasos de Jesús
 gem 'sip', git: "https://github.com/pasosdeJesus/sip.git"
