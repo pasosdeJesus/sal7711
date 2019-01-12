@@ -262,7 +262,7 @@ ALTER SEQUENCE public.sal7711_gen_bitacora_id_seq OWNED BY public.sal7711_gen_bi
 CREATE TABLE public.sal7711_gen_categoriaprensa (
     id integer NOT NULL,
     codigo character varying(15),
-    nombre character varying(500),
+    nombre character varying(500) COLLATE public.es_co_utf_8,
     observaciones character varying(5000),
     fechacreacion date,
     fechadeshabilitacion date,
@@ -593,7 +593,7 @@ CREATE TABLE public.sip_grupoper (
 -- Name: TABLE sip_grupoper; Type: COMMENT; Schema: public; Owner: -
 --
 
-COMMENT ON TABLE public.sip_grupoper IS 'Creado por sip en sal7711_desarrollo';
+COMMENT ON TABLE public.sip_grupoper IS 'Creado por sip en sal7711gen_desarrollo';
 
 
 --
@@ -1763,6 +1763,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20180810221619'),
 ('20180921120954'),
 ('20181011104537'),
-('20190109125417');
+('20190109125417'),
+('20190110191802');
 
 
