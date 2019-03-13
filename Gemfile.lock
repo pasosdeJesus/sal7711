@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: fbb4d62d4683600e15f9bbaae3269e5d83352af8
+  revision: 99a912184438fe25424cc05dd4581945240a88a3
   specs:
     sal7711_gen (1.0.b1)
       rails
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: affa3af5640483bef360de691e7ff5851946a655
+  revision: f3f455ddb06bb42bf89527a45bc19cddfea031d3
   specs:
     sip (2.0.b5)
       bootstrap-datepicker-rails
@@ -112,7 +112,7 @@ GEM
     coffee-script-source (1.12.2)
     colorize (0.8.1)
     commonjs (0.2.7)
-    concurrent-ruby (1.1.4)
+    concurrent-ruby (1.1.5)
     crass (1.0.4)
     debug_inspector (0.0.3)
     devise (4.6.1)
@@ -174,7 +174,7 @@ GEM
     mini_mime (1.0.1)
     mini_portile2 (2.4.0)
     minitest (5.11.3)
-    msgpack (1.2.7)
+    msgpack (1.2.9)
     multi_json (1.13.1)
     nio4r (2.3.1)
     nokogiri (1.10.1)
