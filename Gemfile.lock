@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: be604b99a9e34721a6cfa48f462d0e92f547b993
+  revision: 349ac7099af0780c2792ff9bc36212cd1acb9a5c
   branch: rails6
   specs:
     sal7711_gen (1.0.b1)
@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 4cc04f789f0a19939b812210e33b8e5ed6363cb2
+  revision: c0f502a0235fbca573649b5565e0c15b97529e32
   branch: rails6
   specs:
     sip (2.0.b5)
@@ -270,7 +270,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    regexp_parser (1.5.0)
+    regexp_parser (1.5.1)
     responders (2.4.1)
       actionpack (>= 4.2.0, < 6.0)
       railties (>= 4.2.0, < 6.0)
