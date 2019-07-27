@@ -5,6 +5,7 @@ SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SELECT pg_catalog.set_config('search_path', '', false);
 SET check_function_bodies = false;
+SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
 
@@ -248,7 +249,7 @@ ALTER SEQUENCE public.sal7711_gen_bitacora_id_seq OWNED BY public.sal7711_gen_bi
 CREATE TABLE public.sal7711_gen_categoriaprensa (
     id integer NOT NULL,
     codigo character varying(15),
-    nombre character varying(500) COLLATE public.es_co_utf_8,
+    nombre character varying(500),
     observaciones character varying(5000),
     fechacreacion date,
     fechadeshabilitacion date,
@@ -580,7 +581,7 @@ CREATE TABLE public.sip_grupoper (
 -- Name: TABLE sip_grupoper; Type: COMMENT; Schema: public; Owner: -
 --
 
-COMMENT ON TABLE public.sip_grupoper IS 'Creado por sip en sal7711gen_desarrollo';
+COMMENT ON TABLE public.sip_grupoper IS 'Creado por sip en sal7711_desarrollo';
 
 
 --
