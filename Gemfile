@@ -46,7 +46,7 @@ gem "uglifier"
 gem "coffee-rails"
 
 # jquery como librería JavaScript
-gem "jquery-rails"
+gem "jquery-rails", ">= 4.3.5"
 
 gem "jquery-ui-rails"
 
@@ -122,7 +122,7 @@ group :test do
   gem 'meta_request'
 
   # Pruebas de regresión que no requieren javascript
-  gem "capybara"
+  gem "capybara", ">= 3.28.0"
  
   gem 'simplecov' 
 end
