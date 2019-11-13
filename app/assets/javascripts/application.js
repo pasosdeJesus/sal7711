@@ -13,6 +13,6 @@
 //= require sal7711_gen/application
 //= require_tree .
 
-$(document).on('turbolinks:load ready page:load',  function () {
+document.addEventListener('turbolinks:load',  function () {
 })
 
