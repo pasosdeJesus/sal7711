@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 04c249fc370a254d2730ae31abe0a653ade7023a
+  revision: b8acd7291b1f49367c418ba369223cc1d0fab7dc
   branch: bs4
   specs:
     sip (2.0.b7)
@@ -307,7 +307,6 @@ DEPENDENCIES
   jbuilder
   lazybox
   meta_request
-  minitest
   paperclip
   pg
   prawn
