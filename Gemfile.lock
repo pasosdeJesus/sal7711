@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 331f75610c30b4c9a7cc4f152ad210661a23a344
+  revision: 9874f7af7231c4b121237342ec873e676bd13e06
   specs:
     sal7711_gen (1.0.b2)
       rails
@@ -95,7 +95,7 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     bcrypt (3.1.13)
-    bigdecimal (1.4.4)
+    bigdecimal (2.0.0)
     bindex (0.8.1)
     bootsnap (1.4.5)
       msgpack (~> 1.0)
