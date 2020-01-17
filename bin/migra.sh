@@ -25,7 +25,8 @@ if (test "$?" != "0") then {
 	echo "Problema con bundle install"; 
 	exit 1; 
 } fi;
-bin/rails db:migrate RAILS_ENV=${RAILS_ENV}
+CXX=c++ yarn install
+RAILS_ENV=production bin/rails db:migrate
 if (test "$?" != "0") then { 
 	echo "Problema con db:migrate"; 
 	exit 1; 
