@@ -21,6 +21,8 @@ gem 'jbuilder' # API JSON facil. Ver: https://github.com/rails/jbuilder
 
 gem 'lazybox' # Dialogo modal
 
+gem 'nokogiri', '>=1.11.0.rc4'
+
 gem 'paperclip' # Maneja adjuntos
 
 gem 'pg' #PostgreSQL
