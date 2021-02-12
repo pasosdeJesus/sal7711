@@ -1,3 +1,0 @@
-Sal7711::Application.config.relative_url_root = '/sal7711'
-Sal7711::Application.config.assets.prefix = '/sal7711/assets'
-
