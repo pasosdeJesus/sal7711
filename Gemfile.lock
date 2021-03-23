@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 7b75626fb37230fa228719da58457c08a4820ef2
+  revision: cb41f2f9967a1914f77a4d4849cd25e46934f2e5
   branch: main
   specs:
     sal7711_gen (1.0.b3)
@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: e29da93b88cc3923f87a6ccc8762e9aa5413e388
+  revision: d9297c8f729e1d1e05a3c519871b7ea8122f456e
   branch: main
   specs:
     sip (2.0.b11)
@@ -103,7 +103,7 @@ GEM
     bcrypt (3.1.16)
     bigdecimal (3.0.0)
     bindex (0.8.1)
-    bootsnap (1.7.2)
+    bootsnap (1.7.3)
       msgpack (~> 1.0)
     builder (3.2.4)
     camertron-eprun (1.1.1)
@@ -272,13 +272,13 @@ GEM
     thor (1.1.0)
     tilt (2.0.10)
     ttfunk (1.7.0)
-    twitter_cldr (6.4.0)
+    twitter_cldr (6.5.0)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
       tzinfo
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
-    unicorn (5.8.0)
+    unicorn (6.0.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
     warden (1.2.9)
@@ -341,4 +341,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   2.2.11
+   2.2.15
