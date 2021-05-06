@@ -11,11 +11,11 @@ gem 'cancancan'
 
 gem 'chosen-rails', git: 'https://github.com/vtamara/chosen-rails.git', branch: 'several-fixes' # Cuadros de selección para búsquedas
 
-gem 'coffee-rails' # CoffeeScript para recuersos .js.coffee y vistas
+gem 'coffee-rails' , '>= 5.0.0' # CoffeeScript para recuersos .js.coffee y vistas
 
-gem 'devise' # Autenticación 
+gem 'devise' , '>= 4.7.3' # Autenticación 
 
-gem 'devise-i18n'
+gem 'devise-i18n', '>= 1.9.2'
 
 gem 'jbuilder' # API JSON facil. Ver: https://github.com/rails/jbuilder
 
@@ -29,19 +29,19 @@ gem 'pg' #PostgreSQL
 
 gem 'prawn' # Para generar PDF
 
-gem 'rails', '~> 6.0.3.4'
+gem 'rails', '~> 6.0.3.7'
 
-gem 'rails-i18n'
+gem 'rails-i18n', '>= 6.0.0'
 
-gem 'sassc-rails' # Para generar CSS
+gem 'sassc-rails' , '>= 2.1.2' # Para generar CSS
 
-gem 'simple_form' # Formularios simples 
+gem 'simple_form' , '>= 5.1.0' # Formularios simples 
 
 gem 'twitter_cldr' # ICU con CLDR
 
 gem 'tzinfo' # Zonas horarias
 
-gem 'webpacker'
+gem 'webpacker', '>= 5.2.1'
 
 gem 'will_paginate' # Listados en páginas
 
@@ -65,7 +65,7 @@ group :development, :test do
 
   gem 'colorize'
 
-  gem 'dotenv-rails'
+  gem 'dotenv-rails', '>= 2.7.6'
 end
 
 
@@ -73,7 +73,7 @@ group :development do
 
   gem 'puma', '>= 4.3.3'
 
-  gem 'web-console' # Consola irb en páginas 
+  gem 'web-console' , '>= 4.1.0' # Consola irb en páginas 
 
 end
 
@@ -81,9 +81,9 @@ group :test do
  
   gem 'capybara' # Pruebas de regresión que no requieren javascript
  
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.7.2'
 
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.5'
 
   gem 'simplecov', '<0.18' # Debido a https://github.com/codeclimate/test-reporter/issues/418
 
