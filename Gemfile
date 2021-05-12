@@ -71,7 +71,7 @@ end
 
 group :development do
 
-  gem 'puma', '>= 4.3.3'
+  gem 'puma', '>= 5.3.1'
 
   gem 'web-console' # Consola irb en páginas 
 
