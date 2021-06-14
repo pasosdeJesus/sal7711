@@ -300,7 +300,7 @@ ALTER SEQUENCE public.sal7711_gen_bitacora_id_seq OWNED BY public.sal7711_gen_bi
 CREATE TABLE public.sal7711_gen_categoriaprensa (
     id integer NOT NULL,
     codigo character varying(15),
-    nombre character varying(500),
+    nombre character varying(500) COLLATE public.es_co_utf_8,
     observaciones character varying(5000),
     fechacreacion date,
     fechadeshabilitacion date,
@@ -673,7 +673,7 @@ CREATE TABLE public.sip_grupoper (
 -- Name: TABLE sip_grupoper; Type: COMMENT; Schema: public; Owner: -
 --
 
-COMMENT ON TABLE public.sip_grupoper IS 'Creado por sip en sal7711_desarrollo';
+COMMENT ON TABLE public.sip_grupoper IS 'Creado por sip en sal7711gen_desarrollo';
 
 
 --
