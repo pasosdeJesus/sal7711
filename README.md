@@ -1,6 +1,6 @@
 # Sal7711
 
-[![Revisado por Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com) [![Estado Construcción](https://api.travis-ci.org/pasosdeJesus/sal7711.svg?branch=master)](https://travis-ci.org/pasosdeJesus/sal7711) [![Clima del Código](https://codeclimate.com/github/pasosdeJesus/sal7711/badges/gpa.svg)](https://codeclimate.com/github/pasosdeJesus/sal7711) [![Cobertura de Pruebas](https://codeclimate.com/github/pasosdeJesus/sal7711/badges/coverage.svg)](https://codeclimate.com/github/pasosdeJesus/sal7711) [![security](https://hakiri.io/github/pasosdeJesus/sal7711/master.svg)](https://hakiri.io/github/pasosdeJesus/sal7711/master)
+[![Revisado por Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com) [![Estado Construcción](https://gitlab.com/pasosdeJesus/sal7711/badges/main/pipeline.svg)](https://gitlab.com/pasosdeJesus/sal7711/-/pipelines)[![Clima del Código](https://codeclimate.com/github/pasosdeJesus/sal7711/badges/gpa.svg)](https://codeclimate.com/github/pasosdeJesus/sal7711) [![Cobertura de Pruebas](https://codeclimate.com/github/pasosdeJesus/sal7711/badges/coverage.svg)](https://codeclimate.com/github/pasosdeJesus/sal7711) [![security](https://hakiri.io/github/pasosdeJesus/sal7711/master.svg)](https://hakiri.io/github/pasosdeJesus/sal7711/master)
 
 ![Logo de sal7711](https://raw.githubusercontent.com/pasosdeJesus/sal7711/master/app/assets/images/logo.jpg)
 
