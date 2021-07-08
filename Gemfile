@@ -79,7 +79,7 @@ end
 
 group :test do
  
-  gem 'capybara' # Pruebas de regresión que no requieren javascript
+  gem 'capybara' , '>= 3.35.3' # Pruebas de regresión que no requieren javascript
  
   gem 'meta_request'
 
