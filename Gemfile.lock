@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: d5a6dba06c100c9ebe4aafa4776d9c195f6cb0a6
+  revision: d183dc851072cb8b13b1048e8a196deff71f0d7a
   branch: main
   specs:
     sal7711_gen (1.0.b4)
