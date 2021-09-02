@@ -11,8 +11,8 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 55f89474b1ffb40ef021d4234bb890ee76f2b3de
-  branch: main
+  revision: afee79699a5470dd772a48c90f5eddced624e171
+  branch: bs5
   specs:
     sal7711_gen (1.0.b4)
       rails
@@ -20,8 +20,8 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 8555a0a937f7f1bfbe74057a0e57ea316eb0640e
-  branch: main
+  revision: 652aa3e135ae001888e0664de75fa26834a5ef41
+  branch: bs5
   specs:
     sip (2.0.b12)
       cancancan
@@ -114,7 +114,7 @@ GEM
     bcrypt (3.1.16)
     bigdecimal (3.0.2)
     bindex (0.8.1)
-    bootsnap (1.7.7)
+    bootsnap (1.8.1)
       msgpack (~> 1.0)
     builder (3.2.4)
     camertron-eprun (1.1.1)
@@ -154,7 +154,7 @@ GEM
       railties (>= 3.2)
     erubi (1.10.0)
     execjs (2.8.1)
-    ffi (1.15.3)
+    ffi (1.15.4)
     globalid (0.5.2)
       activesupport (>= 5.0)
     i18n (1.8.10)
@@ -178,7 +178,7 @@ GEM
     method_source (1.0.0)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2021.0704)
+    mime-types-data (3.2021.0901)
     mimemagic (0.3.10)
       nokogiri (~> 1)
       rake
@@ -187,7 +187,7 @@ GEM
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.8)
-    nokogiri (1.12.3)
+    nokogiri (1.12.4)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
     orm_adapter (0.5.0)
@@ -300,7 +300,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webpacker (6.0.0.rc.1)
+    webpacker (6.0.0.rc.5)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
