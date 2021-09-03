@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
+    "@popperjs/core": "^2.10.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "6.0.0-rc.1",
     "bootstrap": "^5.1.0",
