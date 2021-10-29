@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 032f29fee64b715650316cdc8b28a9895ad7ac7b
+  revision: 188f88512e4d481c75d9ee6f5c7d7505b27bd76f
   specs:
     sal7711_gen (1.0.b4)
       rails
@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 28e11fdb8fa2ace61435c495031efb0712db84e4
+  revision: 7e37f8e2d4c638dbe0a67ac39300de3b72c364e2
   specs:
     sip (2.0.b12)
       cancancan
