@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 3937bc9b74672ccf0a3360eee7c086c72f476bdc
+  revision: 936ff17aeb3ba4914128c6ef8b0593f78b5b7a6f
   specs:
     sal7711_gen (1.0.b4)
       rails
@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: c13e90196c7321167a61e459f5f8ac301a572aaf
+  revision: 8d48911ae6209d6dbf830806a2c0615ae53260ae
   specs:
     sip (2.0.b12)
       cancancan
@@ -155,7 +155,7 @@ GEM
     ffi (1.15.4)
     globalid (0.5.2)
       activesupport (>= 5.0)
-    i18n (1.8.10)
+    i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
