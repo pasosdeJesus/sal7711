@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: a2ff11568307b1e9c805beafe1b63eadfed9ba20
+  revision: 631dc81a781ee001aafe14dd0817a6d85114e0c6
   specs:
     sal7711_gen (1.0.b4)
       rails
@@ -19,9 +19,9 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 2540ad199bcc2e60bd9a6c3c5c6b4d4bf1ec912d
+  revision: 438983aab2bccaba5b4cceae787cf6f5b516ac2d
   specs:
-    sip (2.0.b12)
+    sip (2.0)
       cancancan
       chosen-rails
       devise
