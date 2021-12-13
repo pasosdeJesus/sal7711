@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 85b91bd29de00247cbb8489108fbc3704d693a6c
+  revision: 31f0327d3cff653237b9fa5c28524bd945fcaea0
   specs:
     sal7711_gen (1.0.b4)
       rails
@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: f5e1c53d6c8f24be9cc654e875cb956b0e1fb834
+  revision: 45fd00188714cd9024131dc5f58b72afe035c7f7
   specs:
     sip (2.0)
       cancancan
@@ -164,7 +164,7 @@ GEM
     json (2.6.1)
     kgio (2.11.4)
     lazybox (1.1.5)
-    loofah (2.12.0)
+    loofah (2.13.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -270,11 +270,11 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
-    spring (3.1.1)
+    spring (4.0.0)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.4.1)
+    sprockets-rails (3.4.2)
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
