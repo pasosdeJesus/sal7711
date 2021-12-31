@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: cfd21467b9f873c9959f94f15d48c4874ad7dbfa
+  revision: 0d3b196224ff3c98dcf7772c24e245fabc0f95fa
   branch: rails7jses
   specs:
     sal7711_gen (2.1a1)
@@ -43,6 +43,13 @@ GIT
       coffee-rails (>= 3.2)
       railties (>= 3.0)
       sass-rails (>= 3.2)
+
+GIT
+  remote: https://github.com/vtamara/cocoon.git
+  revision: 9f1892403c3dbdb8f7d457a06f237ff58e7dfb07
+  branch: new_id_with_ajax
+  specs:
+    cocoon (1.2.11)
 
 GEM
   remote: https://rubygems.org/
@@ -161,6 +168,8 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    jsbundling-rails (1.0.0)
+      railties (>= 6.0.0)
     json (2.6.1)
     kgio (2.11.4)
     lazybox (1.1.5)
@@ -200,8 +209,6 @@ GEM
     rack (2.2.3)
     rack-contrib (2.3.0)
       rack (~> 2.0)
-    rack-proxy (0.7.0)
-      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (7.0.0)
@@ -253,7 +260,6 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    semantic_range (3.0.0)
     simple_form (5.1.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
@@ -291,11 +297,6 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webpacker (6.0.0.rc.1)
-      activesupport (>= 5.2)
-      rack-proxy (>= 0.6.1)
-      railties (>= 5.2)
-      semantic_range (>= 2.3.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -314,12 +315,14 @@ DEPENDENCIES
   cancancan
   capybara
   chosen-rails!
+  cocoon!
   coffee-rails
   colorize
   devise
   devise-i18n
   dotenv-rails
   jbuilder
+  jsbundling-rails
   kt-paperclip!
   lazybox
   meta_request
@@ -336,11 +339,11 @@ DEPENDENCIES
   simplecov (< 0.18)
   sip!
   spring
+  sprockets-rails
   twitter_cldr
   tzinfo
   unicorn
   web-console
-  webpacker (= 6.0.0.rc.1)
   will_paginate
 
 BUNDLED WITH
