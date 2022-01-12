@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/kreeti/kt-paperclip.git
-  revision: 1328a1a69f88c9bab911c305455e67ca4daa0b5a
+  revision: a077561f75d6ef064dbd4f4806b519cb3df28c88
   specs:
     kt-paperclip (7.0.1)
       activemodel (>= 4.2.0)
@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: b14f66cf0003980c34494f95b4d4ccd1e32a883c
+  revision: 3edec5e4a1032345b38405a13dfb9eb05605cba7
   branch: rails7jses
   specs:
     sal7711_gen (2.1a1)
@@ -123,6 +123,10 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    babel-source (5.8.35)
+    babel-transpiler (0.7.0)
+      babel-source (>= 4.0, < 6)
+      execjs (~> 2.0)
     bcrypt (3.1.16)
     bigdecimal (3.1.1)
     bindex (0.8.1)
@@ -301,6 +305,8 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    stimulus-rails (1.0.2)
+      railties (>= 6.0.0)
     strscan (3.0.1)
     terrapin (0.6.0)
       climate_control (>= 0.0.3, < 1.0)
@@ -308,6 +314,8 @@ GEM
     tilt (2.0.10)
     timeout (0.2.0)
     ttfunk (1.7.0)
+    turbo-rails (7.1.1)
+      rails (>= 6.0.0)
     twitter_cldr (6.11.0)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
@@ -336,6 +344,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  babel-transpiler
   bcrypt
   bigdecimal
   bootsnap (>= 1.1.0)
@@ -367,6 +376,8 @@ DEPENDENCIES
   sip!
   spring
   sprockets-rails
+  stimulus-rails
+  turbo-rails
   twitter_cldr
   tzinfo
   unicorn

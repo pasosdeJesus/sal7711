@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 
+gem 'babel-transpiler'
+
 gem 'bcrypt'
 
 gem 'bootsnap', '>=1.1.0', require: false
@@ -44,6 +46,10 @@ gem 'sassc-rails' # Para generar CSS
 gem 'simple_form' # Formularios simples 
 
 gem 'sprockets-rails'
+
+gem 'stimulus-rails'
+
+gem 'turbo-rails'
 
 gem 'twitter_cldr' # ICU con CLDR
 
