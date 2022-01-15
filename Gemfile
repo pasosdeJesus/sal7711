@@ -90,17 +90,15 @@ group :development do
 end
 
 group :test do
- 
+  gem 'cuprite'
+
   gem 'capybara' # Pruebas de regresión que no requieren javascript
  
-  gem 'meta_request'
-
   gem 'rails-controller-testing'
 
   gem 'simplecov', '<0.18' # Debido a https://github.com/codeclimate/test-reporter/issues/418
 
   gem 'spring' # Acelera ejecutando en fondo.  
-
 end
 
 

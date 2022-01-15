@@ -1,4 +1,4 @@
-require_relative "../../../test/test_helper"
+require "test_helper"
 require "capybara/cuprite"
 
 class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
