@@ -73,7 +73,7 @@ gem 'sal7711_gen', # Motor de archivo de prensa
 
 group :development, :test do
 
-  #gem 'byebug'
+  gem 'debug'
 
   gem 'colorize'
 
