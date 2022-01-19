@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 4c4df4586101a0c22d0492faab6d98ca3b31935b
+  revision: 2b2daa0fa1cf9ee0ebe323c11e01fe30fc6d496b
   branch: main
   specs:
     sal7711_gen (2.1a1)
@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: e70ec9afa508794d74ec15d86d4bb95902836876
+  revision: f195f8c2ce1af3144ec15847e86b442fd44cfc63
   branch: main
   specs:
     sip (2.1a1)
@@ -318,7 +318,7 @@ GEM
     ttfunk (1.7.0)
     turbo-rails (7.1.1)
       rails (>= 6.0.0)
-    twitter_cldr (6.11.0)
+    twitter_cldr (6.11.1)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
       tzinfo
