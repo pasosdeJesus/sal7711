@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 119dc05ca018c6cb824ac7434d08797ba4d20af3
+  revision: 3e32d1111cbd0314a7719fe1f6410c6b0dae13c1
   branch: main
   specs:
     sal7711_gen (2.1a1)
@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: a1172dbfa00c1d55bcf235b9b3772920e971e3f4
+  revision: 7a4df5181c256d159612dc80d18029ce3a3c2502
   branch: main
   specs:
     sip (2.1a1)
@@ -190,7 +190,6 @@ GEM
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
     io-console (0.5.11)
-    io-wait (0.2.1)
     irb (1.4.1)
       reline (>= 0.3.0)
     jbuilder (2.11.5)
@@ -201,7 +200,7 @@ GEM
     json (2.6.1)
     kgio (2.11.4)
     lazybox (1.1.5)
-    loofah (2.15.0)
+    loofah (2.16.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -224,8 +223,7 @@ GEM
       digest
       net-protocol
       timeout
-    net-protocol (0.1.2)
-      io-wait
+    net-protocol (0.1.3)
       timeout
     net-smtp (0.3.1)
       digest
@@ -237,7 +235,7 @@ GEM
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pdf-core (0.9.0)
-    pg (1.3.4)
+    pg (1.3.5)
     prawn (2.4.0)
       pdf-core (~> 0.9.0)
       ttfunk (~> 1.7)
