@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: d0d0ac64a379f920dd68adbd6624b71a1e39bdef
+  revision: 4b8c86fd3f2170c60223950dea89b56671ba61b3
   branch: main
   specs:
     sal7711_gen (2.1a1)
@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 18099836a6325e74c3b8d20ef07ee71bccfdf881
+  revision: c8dc1b588289b1166b8cdd74fb7992467bb4e518
   branch: main
   specs:
     sip (2.1a1)
@@ -325,7 +325,7 @@ GEM
     turbo-rails (1.0.1)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
-    twitter_cldr (6.11.2)
+    twitter_cldr (6.11.3)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
       tzinfo
@@ -395,4 +395,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   2.3.7
+   2.3.12
