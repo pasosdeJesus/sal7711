@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 00a8dd2fce1d45cb3a63002a9e0a16f8fce3c3f3
+  revision: 479a04ba3b080dd0b5a7ecab718024f1e14a40d8
   branch: main
   specs:
     sal7711_gen (2.1a1)
@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 4d451472c5045a60594456bbc9372584f050dee9
+  revision: 1a3721bef698e6da633e35722518c900fa2aed66
   branch: main
   specs:
     sip (2.1a2)
@@ -200,7 +200,7 @@ GEM
     json (2.6.2)
     kgio (2.11.4)
     lazybox (1.1.5)
-    loofah (2.18.0)
+    loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
