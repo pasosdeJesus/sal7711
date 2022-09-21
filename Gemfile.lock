@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 2754729de65f75df70e8f00b63efb329dbeae0b7
+  revision: f6f6f7e51df312547b58554f1d48ac38464ab0b9
   branch: main
   specs:
     sal7711_gen (2.1a1)
@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: d4da42efdd295f387d44bb7e992cfaa2e629b71b
+  revision: 69e9b0137cc087fd00f6b56cd6064c349f85009c
   branch: main
   specs:
     sip (2.1a2)
@@ -305,7 +305,7 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
-    spring (4.0.0)
+    spring (4.1.0)
     sprockets (4.1.1)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
