@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: bd9b2ef92df4ec0311b8ac2af0289b59d2a521f8
+  revision: 1ff6c701d4b51a8a9a691b749e1dee27604ca105
   branch: main
   specs:
     sal7711_gen (2.1.0.beta1)
@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: e6ed8907e324873b20372ff8821f8495be9d54a9
+  revision: 93c15bb5eb571395c56d39d6bdd6d3424069f376
   branch: main
   specs:
     sip (2.1.0.beta1)
@@ -340,7 +340,7 @@ GEM
     will_paginate (3.3.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.5)
+    zeitwerk (2.6.6)
 
 PLATFORMS
   ruby
