@@ -8,13 +8,13 @@ Sistema para manejo de un archivo de prensa
 
 ### Requerimientos
 
-Ver <https://github.com/pasosdeJesus/sip/wiki/Requerimientos>
+Ver <https://github.com/pasosdeJesus/msip/wiki/Requerimientos>
 
 ### Arquitectura
 
 Es una aplicación que emplea los motores genéricos 
 [sal7711_gen](https://github.com/pasosdeJesus/sal7711_gen)
-y  [sip](https://github.com/pasosdeJesus/sip)
+y  [msip](https://github.com/pasosdeJesus/msip)
 
 
 ## Uso

@@ -20,7 +20,7 @@ public/assets/
 public/colchon-articulos/
 archivo/
 config/application.rb
-config/initializers/sip.rb
+config/initializers/msip.rb
 config/routes.rb
 config/unicorn.conf.minimal.rb
 *swp
@@ -41,7 +41,7 @@ yarn-debug.log*
 .env
 app/assets/builds/
 
-app/javascript/controllers/sip
+app/javascript/controllers/msip
 app/javascript/controllers/mr519_gen
 app/javascript/controllers/heb412_gen
 app/javascript/controllers/cor1440_gen

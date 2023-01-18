@@ -1,20 +1,20 @@
 require 'test_helper'
 
-module Sip
+module Msip
   class TsitioTest < ActiveSupport::TestCase
 
     test "busca existente" do
-      tsitio = Sip::Tsitio.where(id: 2).take
+      tsitio = Msip::Tsitio.where(id: 2).take
       assert_equal('URBANO', tsitio.nombre)
     end
 
     test "crea no valido" do
-      tsitio = Sip::Tsitio.new(fechacreacion: "2015-07-23") # sin nombre
+      tsitio = Msip::Tsitio.new(fechacreacion: "2015-07-23") # sin nombre
       assert_not tsitio.save
     end
 
     test "crea valido" do
-      tsitio = Sip::Tsitio.new(id:1000, nombre: "x", fechacreacion: "2015-07-23")
+      tsitio = Msip::Tsitio.new(id:1000, nombre: "x", fechacreacion: "2015-07-23")
       assert tsitio.save
       tsitio.destroy!
     end

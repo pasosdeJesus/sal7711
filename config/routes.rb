@@ -23,9 +23,9 @@ Rails.application.routes.draw do
     end
     resources :usuarios, path_names: { new: 'nuevo', edit: 'edita' } 
 
-    root to: 'sip/hogar#index'
+    root to: 'msip/hogar#index'
   end
 
-  mount Sip::Engine, at: rutarel, as: 'sip'
+  mount Msip::Engine, at: rutarel, as: 'msip'
   mount Sal7711Gen::Engine, at: rutarel, as: 'sal7711_gen'
 end

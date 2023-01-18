@@ -10,7 +10,7 @@ namespace :db do
   namespace :test do
     task :prepare => :environment do
       Rake::Task["db:seed"].invoke
-      Rake::Task["sip:indices"].invoke
+      Rake::Task["msip:indices"].invoke
     end
   end
 end
