@@ -246,137 +246,6 @@ CREATE TABLE public.ar_internal_metadata (
 
 
 --
--- Name: sal7711_gen_articulo; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.sal7711_gen_articulo (
-    id integer NOT NULL,
-    departamento_id integer,
-    municipio_id integer,
-    fuenteprensa_id integer NOT NULL,
-    fecha date NOT NULL,
-    pagina character varying(20) NOT NULL,
-    created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL,
-    texto text,
-    adjunto_file_name character varying,
-    adjunto_content_type character varying,
-    adjunto_file_size integer,
-    adjunto_updated_at timestamp without time zone,
-    anexo_id_antiguo integer,
-    adjunto_descripcion character varying(1500)
-);
-
-
---
--- Name: sal7711_gen_articulo_categoriaprensa; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.sal7711_gen_articulo_categoriaprensa (
-    articulo_id integer NOT NULL,
-    categoriaprensa_id integer NOT NULL
-);
-
-
---
--- Name: sal7711_gen_articulo_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE public.sal7711_gen_articulo_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: sal7711_gen_articulo_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
---
-
-ALTER SEQUENCE public.sal7711_gen_articulo_id_seq OWNED BY public.sal7711_gen_articulo.id;
-
-
---
--- Name: sal7711_gen_bitacora; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.sal7711_gen_bitacora (
-    id integer NOT NULL,
-    fecha timestamp without time zone,
-    ip character varying(100),
-    usuario_id integer,
-    operacion character varying(50),
-    detalle character varying(5000),
-    detalle2 character varying(500),
-    detalle3 character varying(500)
-);
-
-
---
--- Name: sal7711_gen_bitacora_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE public.sal7711_gen_bitacora_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: sal7711_gen_bitacora_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
---
-
-ALTER SEQUENCE public.sal7711_gen_bitacora_id_seq OWNED BY public.sal7711_gen_bitacora.id;
-
-
---
--- Name: sal7711_gen_categoriaprensa; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.sal7711_gen_categoriaprensa (
-    id integer NOT NULL,
-    codigo character varying(15),
-    nombre character varying(500) COLLATE public.es_co_utf_8,
-    observaciones character varying(5000),
-    fechacreacion date,
-    fechadeshabilitacion date,
-    created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone
-);
-
-
---
--- Name: sal7711_gen_categoriaprensa_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE public.sal7711_gen_categoriaprensa_id_seq
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: sal7711_gen_categoriaprensa_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
---
-
-ALTER SEQUENCE public.sal7711_gen_categoriaprensa_id_seq OWNED BY public.sal7711_gen_categoriaprensa.id;
-
-
---
--- Name: schema_migrations; Type: TABLE; Schema: public; Owner: -
---
-
-CREATE TABLE public.schema_migrations (
-    version character varying NOT NULL
-);
-
-
---
 -- Name: msip_anexo_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
@@ -475,6 +344,11 @@ CREATE TABLE public.msip_clase (
     observaciones character varying(5000) COLLATE public.es_co_utf_8,
     ultvigenciaini date,
     ultvigenciafin date,
+    svgruta character varying,
+    svgcdx integer,
+    svgcdy integer,
+    svgcdancho integer,
+    svgcdalto integer,
     CONSTRAINT clase_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion)))
 );
 
@@ -547,6 +421,11 @@ CREATE TABLE public.msip_departamento (
     codreg integer,
     ultvigenciaini date,
     ultvigenciafin date,
+    svgruta character varying,
+    svgcdx integer,
+    svgcdy integer,
+    svgcdancho integer,
+    svgcdalto integer,
     CONSTRAINT departamento_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion)))
 );
 
@@ -710,10 +589,10 @@ CREATE TABLE public.msip_grupo (
 
 
 --
--- Name: grupo_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+-- Name: msip_grupo_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-CREATE SEQUENCE public.grupo_id_seq
+CREATE SEQUENCE public.msip_grupo_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -722,10 +601,10 @@ CREATE SEQUENCE public.grupo_id_seq
 
 
 --
--- Name: grupo_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+-- Name: msip_grupo_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
-ALTER SEQUENCE public.grupo_id_seq OWNED BY public.msip_grupo.id;
+ALTER SEQUENCE public.msip_grupo_id_seq OWNED BY public.msip_grupo.id;
 
 
 --
@@ -800,6 +679,11 @@ CREATE TABLE public.msip_municipio (
     ultvigenciaini date,
     ultvigenciafin date,
     tipomun character varying(32),
+    svgruta character varying,
+    svgcdx integer,
+    svgcdy integer,
+    svgcdancho integer,
+    svgcdalto integer,
     CONSTRAINT municipio_check CHECK (((fechadeshabilitacion IS NULL) OR (fechadeshabilitacion >= fechacreacion)))
 );
 
@@ -1016,7 +900,12 @@ CREATE TABLE public.msip_pais (
     nombreiso_ingles character varying(512),
     nombreiso_frances character varying(512),
     ultvigenciaini date,
-    ultvigenciafin date
+    ultvigenciafin date,
+    svgruta character varying,
+    svgcdx integer,
+    svgcdy integer,
+    svgcdancho integer,
+    svgcdalto integer
 );
 
 
@@ -1566,6 +1455,137 @@ ALTER SEQUENCE public.msip_vereda_id_seq OWNED BY public.msip_vereda.id;
 
 
 --
+-- Name: sal7711_gen_articulo; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.sal7711_gen_articulo (
+    id integer NOT NULL,
+    departamento_id integer,
+    municipio_id integer,
+    fuenteprensa_id integer NOT NULL,
+    fecha date NOT NULL,
+    pagina character varying(20) NOT NULL,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL,
+    texto text,
+    adjunto_file_name character varying,
+    adjunto_content_type character varying,
+    adjunto_file_size integer,
+    adjunto_updated_at timestamp without time zone,
+    anexo_id_antiguo integer,
+    adjunto_descripcion character varying(1500)
+);
+
+
+--
+-- Name: sal7711_gen_articulo_categoriaprensa; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.sal7711_gen_articulo_categoriaprensa (
+    articulo_id integer NOT NULL,
+    categoriaprensa_id integer NOT NULL
+);
+
+
+--
+-- Name: sal7711_gen_articulo_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.sal7711_gen_articulo_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: sal7711_gen_articulo_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.sal7711_gen_articulo_id_seq OWNED BY public.sal7711_gen_articulo.id;
+
+
+--
+-- Name: sal7711_gen_bitacora; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.sal7711_gen_bitacora (
+    id integer NOT NULL,
+    fecha timestamp without time zone,
+    ip character varying(100),
+    usuario_id integer,
+    operacion character varying(50),
+    detalle character varying(5000),
+    detalle2 character varying(500),
+    detalle3 character varying(500)
+);
+
+
+--
+-- Name: sal7711_gen_bitacora_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.sal7711_gen_bitacora_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: sal7711_gen_bitacora_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.sal7711_gen_bitacora_id_seq OWNED BY public.sal7711_gen_bitacora.id;
+
+
+--
+-- Name: sal7711_gen_categoriaprensa; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.sal7711_gen_categoriaprensa (
+    id integer NOT NULL,
+    codigo character varying(15),
+    nombre character varying(500) COLLATE public.es_co_utf_8,
+    observaciones character varying(5000),
+    fechacreacion date,
+    fechadeshabilitacion date,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone
+);
+
+
+--
+-- Name: sal7711_gen_categoriaprensa_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.sal7711_gen_categoriaprensa_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: sal7711_gen_categoriaprensa_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.sal7711_gen_categoriaprensa_id_seq OWNED BY public.sal7711_gen_categoriaprensa.id;
+
+
+--
+-- Name: schema_migrations; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.schema_migrations (
+    version character varying NOT NULL
+);
+
+
+--
 -- Name: usuario_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
@@ -1614,27 +1634,6 @@ CREATE TABLE public.usuario (
 
 
 --
--- Name: sal7711_gen_articulo id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_articulo ALTER COLUMN id SET DEFAULT nextval('public.sal7711_gen_articulo_id_seq'::regclass);
-
-
---
--- Name: sal7711_gen_bitacora id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_bitacora ALTER COLUMN id SET DEFAULT nextval('public.sal7711_gen_bitacora_id_seq'::regclass);
-
-
---
--- Name: sal7711_gen_categoriaprensa id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_categoriaprensa ALTER COLUMN id SET DEFAULT nextval('public.sal7711_gen_categoriaprensa_id_seq'::regclass);
-
-
---
 -- Name: msip_bitacora id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -1673,7 +1672,7 @@ ALTER TABLE ONLY public.msip_fuenteprensa ALTER COLUMN id SET DEFAULT nextval('p
 -- Name: msip_grupo id; Type: DEFAULT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.msip_grupo ALTER COLUMN id SET DEFAULT nextval('public.grupo_id_seq'::regclass);
+ALTER TABLE ONLY public.msip_grupo ALTER COLUMN id SET DEFAULT nextval('public.msip_grupo_id_seq'::regclass);
 
 
 --
@@ -1775,11 +1774,24 @@ ALTER TABLE ONLY public.msip_vereda ALTER COLUMN id SET DEFAULT nextval('public.
 
 
 --
--- Name: msip_anexo anexo_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sal7711_gen_articulo id; Type: DEFAULT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.msip_anexo
-    ADD CONSTRAINT anexo_pkey PRIMARY KEY (id);
+ALTER TABLE ONLY public.sal7711_gen_articulo ALTER COLUMN id SET DEFAULT nextval('public.sal7711_gen_articulo_id_seq'::regclass);
+
+
+--
+-- Name: sal7711_gen_bitacora id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.sal7711_gen_bitacora ALTER COLUMN id SET DEFAULT nextval('public.sal7711_gen_bitacora_id_seq'::regclass);
+
+
+--
+-- Name: sal7711_gen_categoriaprensa id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.sal7711_gen_categoriaprensa ALTER COLUMN id SET DEFAULT nextval('public.sal7711_gen_categoriaprensa_id_seq'::regclass);
 
 
 --
@@ -1791,51 +1803,11 @@ ALTER TABLE ONLY public.ar_internal_metadata
 
 
 --
--- Name: msip_etiqueta etiqueta_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: msip_anexo msip_anexo_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.msip_etiqueta
-    ADD CONSTRAINT etiqueta_pkey PRIMARY KEY (id);
-
-
---
--- Name: msip_pais pais_pkey; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.msip_pais
-    ADD CONSTRAINT pais_pkey PRIMARY KEY (id);
-
-
---
--- Name: msip_persona persona_pkey; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.msip_persona
-    ADD CONSTRAINT persona_pkey PRIMARY KEY (id);
-
-
---
--- Name: sal7711_gen_articulo sal7711_gen_articulo_pkey; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_articulo
-    ADD CONSTRAINT sal7711_gen_articulo_pkey PRIMARY KEY (id);
-
-
---
--- Name: sal7711_gen_bitacora sal7711_gen_bitacora_pkey; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_bitacora
-    ADD CONSTRAINT sal7711_gen_bitacora_pkey PRIMARY KEY (id);
-
-
---
--- Name: sal7711_gen_categoriaprensa sal7711_gen_categoriaprensa_pkey; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.sal7711_gen_categoriaprensa
-    ADD CONSTRAINT sal7711_gen_categoriaprensa_pkey PRIMARY KEY (id);
+ALTER TABLE ONLY public.msip_anexo
+    ADD CONSTRAINT msip_anexo_pkey PRIMARY KEY (id);
 
 
 --
@@ -1916,6 +1888,14 @@ ALTER TABLE ONLY public.msip_departamento
 
 ALTER TABLE ONLY public.msip_estadosol
     ADD CONSTRAINT msip_estadosol_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: msip_etiqueta msip_etiqueta_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.msip_etiqueta
+    ADD CONSTRAINT msip_etiqueta_pkey PRIMARY KEY (id);
 
 
 --
@@ -2015,11 +1995,27 @@ ALTER TABLE ONLY public.msip_pais_histvigencia
 
 
 --
+-- Name: msip_pais msip_pais_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.msip_pais
+    ADD CONSTRAINT msip_pais_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: msip_perfilorgsocial msip_perfilorgsocial_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.msip_perfilorgsocial
     ADD CONSTRAINT msip_perfilorgsocial_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: msip_persona msip_persona_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.msip_persona
+    ADD CONSTRAINT msip_persona_pkey PRIMARY KEY (id);
 
 
 --
@@ -2063,6 +2059,22 @@ ALTER TABLE ONLY public.msip_solicitud
 
 
 --
+-- Name: msip_tclase msip_tclase_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.msip_tclase
+    ADD CONSTRAINT msip_tclase_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: msip_tdocumento msip_tdocumento_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.msip_tdocumento
+    ADD CONSTRAINT msip_tdocumento_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: msip_tema msip_tema_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -2079,11 +2091,35 @@ ALTER TABLE ONLY public.msip_tipoorg
 
 
 --
+-- Name: msip_trelacion msip_trelacion_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.msip_trelacion
+    ADD CONSTRAINT msip_trelacion_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: msip_trivalente msip_trivalente_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.msip_trivalente
     ADD CONSTRAINT msip_trivalente_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: msip_tsitio msip_tsitio_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.msip_tsitio
+    ADD CONSTRAINT msip_tsitio_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: msip_ubicacion msip_ubicacion_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.msip_ubicacion
+    ADD CONSTRAINT msip_ubicacion_pkey PRIMARY KEY (id);
 
 
 --
@@ -2103,43 +2139,27 @@ ALTER TABLE ONLY public.msip_vereda
 
 
 --
--- Name: msip_tclase tclase_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sal7711_gen_articulo sal7711_gen_articulo_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.msip_tclase
-    ADD CONSTRAINT tclase_pkey PRIMARY KEY (id);
-
-
---
--- Name: msip_tdocumento tdocumento_pkey; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.msip_tdocumento
-    ADD CONSTRAINT tdocumento_pkey PRIMARY KEY (id);
+ALTER TABLE ONLY public.sal7711_gen_articulo
+    ADD CONSTRAINT sal7711_gen_articulo_pkey PRIMARY KEY (id);
 
 
 --
--- Name: msip_trelacion trelacion_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sal7711_gen_bitacora sal7711_gen_bitacora_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.msip_trelacion
-    ADD CONSTRAINT trelacion_pkey PRIMARY KEY (id);
-
-
---
--- Name: msip_tsitio tsitio_pkey; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.msip_tsitio
-    ADD CONSTRAINT tsitio_pkey PRIMARY KEY (id);
+ALTER TABLE ONLY public.sal7711_gen_bitacora
+    ADD CONSTRAINT sal7711_gen_bitacora_pkey PRIMARY KEY (id);
 
 
 --
--- Name: msip_ubicacion ubicacion_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: sal7711_gen_categoriaprensa sal7711_gen_categoriaprensa_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.msip_ubicacion
-    ADD CONSTRAINT ubicacion_pkey PRIMARY KEY (id);
+ALTER TABLE ONLY public.sal7711_gen_categoriaprensa
+    ADD CONSTRAINT sal7711_gen_categoriaprensa_pkey PRIMARY KEY (id);
 
 
 --
@@ -2537,54 +2557,6 @@ ALTER TABLE ONLY public.msip_solicitud
 
 
 --
--- Name: msip_persona persona_id_pais_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.msip_persona
-    ADD CONSTRAINT persona_id_pais_fkey FOREIGN KEY (id_pais) REFERENCES public.msip_pais(id);
-
-
---
--- Name: msip_persona persona_nacionalde_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.msip_persona
-    ADD CONSTRAINT persona_nacionalde_fkey FOREIGN KEY (nacionalde) REFERENCES public.msip_pais(id);
-
-
---
--- Name: msip_persona persona_tdocumento_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.msip_persona
-    ADD CONSTRAINT persona_tdocumento_id_fkey FOREIGN KEY (tdocumento_id) REFERENCES public.msip_tdocumento(id);
-
-
---
--- Name: msip_persona_trelacion persona_trelacion_id_trelacion_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.msip_persona_trelacion
-    ADD CONSTRAINT persona_trelacion_id_trelacion_fkey FOREIGN KEY (id_trelacion) REFERENCES public.msip_trelacion(id);
-
-
---
--- Name: msip_persona_trelacion persona_trelacion_persona1_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.msip_persona_trelacion
-    ADD CONSTRAINT persona_trelacion_persona1_fkey FOREIGN KEY (persona1) REFERENCES public.msip_persona(id);
-
-
---
--- Name: msip_persona_trelacion persona_trelacion_persona2_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.msip_persona_trelacion
-    ADD CONSTRAINT persona_trelacion_persona2_fkey FOREIGN KEY (persona2) REFERENCES public.msip_persona(id);
-
-
---
 -- Name: msip_clase msip_clase_id_municipio_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -2646,6 +2618,54 @@ ALTER TABLE ONLY public.msip_ubicacion
 
 ALTER TABLE ONLY public.msip_ubicacion
     ADD CONSTRAINT msip_ubicacion_id_municipio_fkey FOREIGN KEY (id_municipio) REFERENCES public.msip_municipio(id);
+
+
+--
+-- Name: msip_persona persona_id_pais_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.msip_persona
+    ADD CONSTRAINT persona_id_pais_fkey FOREIGN KEY (id_pais) REFERENCES public.msip_pais(id);
+
+
+--
+-- Name: msip_persona persona_nacionalde_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.msip_persona
+    ADD CONSTRAINT persona_nacionalde_fkey FOREIGN KEY (nacionalde) REFERENCES public.msip_pais(id);
+
+
+--
+-- Name: msip_persona persona_tdocumento_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.msip_persona
+    ADD CONSTRAINT persona_tdocumento_id_fkey FOREIGN KEY (tdocumento_id) REFERENCES public.msip_tdocumento(id);
+
+
+--
+-- Name: msip_persona_trelacion persona_trelacion_id_trelacion_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.msip_persona_trelacion
+    ADD CONSTRAINT persona_trelacion_id_trelacion_fkey FOREIGN KEY (id_trelacion) REFERENCES public.msip_trelacion(id);
+
+
+--
+-- Name: msip_persona_trelacion persona_trelacion_persona1_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.msip_persona_trelacion
+    ADD CONSTRAINT persona_trelacion_persona1_fkey FOREIGN KEY (persona1) REFERENCES public.msip_persona(id);
+
+
+--
+-- Name: msip_persona_trelacion persona_trelacion_persona2_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.msip_persona_trelacion
+    ADD CONSTRAINT persona_trelacion_persona2_fkey FOREIGN KEY (persona2) REFERENCES public.msip_persona(id);
 
 
 --
@@ -2777,8 +2797,18 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20220805181901'),
 ('20220822132000'),
 ('20220822132754'),
+('20221024221557'),
+('20221025025402'),
 ('20221102144613'),
 ('20221102145906'),
-('20221118032223');
+('20221118032223'),
+('20221201143440'),
+('20221201154025'),
+('20221208173349'),
+('20221210155527'),
+('20221211141207'),
+('20221211141208'),
+('20221211141209'),
+('20221212021533');
 
 
