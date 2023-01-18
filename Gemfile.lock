@@ -10,7 +10,24 @@ GIT
       terrapin (~> 0.6.0)
 
 GIT
-  remote: https://github.com/pasosdeJesus/msip.git
+  remote: https://github.com/vtamara/chosen-rails.git
+  revision: 48c457fc9ef1c4c573b4dcdb9dc07034b46ed6b4
+  branch: several-fixes
+  specs:
+    chosen-rails (1.8.7)
+      coffee-rails (>= 3.2)
+      railties (>= 3.0)
+      sass-rails (>= 3.2)
+
+GIT
+  remote: https://github.com/vtamara/cocoon.git
+  revision: 9f1892403c3dbdb8f7d457a06f237ff58e7dfb07
+  branch: new_id_with_ajax
+  specs:
+    cocoon (1.2.11)
+
+GIT
+  remote: https://gitlab.com/pasosdeJesus/msip.git
   revision: 0f4dff0a6b63ea4acac59e70e189cfbfe3710033
   branch: main
   specs:
@@ -30,30 +47,13 @@ GIT
       will_paginate (~> 3)
 
 GIT
-  remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: ff82ff0e0abffadbf4837c4fac73c41d2cabefcb
+  remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
+  revision: 345f9f322cf2305e23b3470e31ef4ef7545a0fd5
   branch: main
   specs:
-    sal7711_gen (2.1.0.beta1)
+    sal7711_gen (2.2.0.beta1)
       msip
       rails
-
-GIT
-  remote: https://github.com/vtamara/chosen-rails.git
-  revision: 48c457fc9ef1c4c573b4dcdb9dc07034b46ed6b4
-  branch: several-fixes
-  specs:
-    chosen-rails (1.8.7)
-      coffee-rails (>= 3.2)
-      railties (>= 3.0)
-      sass-rails (>= 3.2)
-
-GIT
-  remote: https://github.com/vtamara/cocoon.git
-  revision: 9f1892403c3dbdb8f7d457a06f237ff58e7dfb07
-  branch: new_id_with_ajax
-  specs:
-    cocoon (1.2.11)
 
 GEM
   remote: https://rubygems.org/
