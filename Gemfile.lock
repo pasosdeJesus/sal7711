@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 2d136aac3ed751d5ed99015415d188723c42ba28
+  revision: 86ddbe0cb764c9e32b211d2b11c4a5427aef2058
   branch: main
   specs:
     msip (2.2.0.alfa3)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 44657bb7ac85ff417dd0bcdbf92e9f9453510f15
+  revision: 36b0524969162a0f1a4a282c789caa072c4934b1
   branch: main
   specs:
     sal7711_gen (2.2.0.beta1)
@@ -328,7 +328,7 @@ GEM
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.1)
       tzinfo
-    tzinfo (2.0.5)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicorn (6.1.0)
       kgio (~> 2.6)
