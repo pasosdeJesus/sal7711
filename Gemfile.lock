@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: b65fc7d91decdc9a238b206a2785d6d36f1fdf31
+  revision: 484be27d5f0cf08e39496b8f0c240c2f1556602c
   branch: main
   specs:
     msip (2.2.0.beta1)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 027bfa5c1a8ea40884a58f460094e8ad10631982
+  revision: 3deaae3f1d3bd09f4fd87c57ef8cb7598005c71f
   branch: main
   specs:
     sal7711_gen (2.2.0.beta1)
@@ -280,7 +280,7 @@ GEM
       zeitwerk (~> 2.5)
     raindrops (0.20.0)
     rake (13.0.6)
-    regexp_parser (2.6.2)
+    regexp_parser (2.7.0)
     reline (0.3.2)
       io-console (~> 0.5)
     responders (3.1.0)
@@ -347,7 +347,7 @@ GEM
     will_paginate (3.3.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.6)
+    zeitwerk (2.6.7)
 
 PLATFORMS
   ruby
