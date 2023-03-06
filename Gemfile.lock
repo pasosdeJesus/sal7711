@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 5deb7f4402b33cbc0437bffa34ed4e53b0a59b44
+  revision: e568e5a3de8227e41d54e74a4aa9391a34c8326d
   branch: main
   specs:
     msip (2.2.0.beta1)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 50b46391cfe051d2e681468f475ef4c8d95ae6a2
+  revision: 2d20c70a61d4fb3f458a8b4b36ea496fb03e4b3f
   branch: main
   specs:
     sal7711_gen (2.2.0.beta1)
@@ -136,7 +136,7 @@ GEM
       msgpack (~> 1.2)
     builder (3.2.4)
     camertron-eprun (1.1.1)
-    cancancan (3.4.0)
+    cancancan (3.5.0)
     capybara (3.38.0)
       addressable
       matrix
@@ -156,7 +156,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     colorize (0.8.1)
-    concurrent-ruby (1.2.0)
+    concurrent-ruby (1.2.2)
     crass (1.0.6)
     cuprite (0.14.3)
       capybara (~> 3.0)
@@ -216,8 +216,8 @@ GEM
     mime-types-data (3.2023.0218.1)
     mini_mime (1.1.2)
     mini_portile2 (2.8.1)
-    minitest (5.17.0)
-    msgpack (1.6.0)
+    minitest (5.18.0)
+    msgpack (1.6.1)
     net-imap (0.3.4)
       date
       net-protocol
@@ -233,15 +233,15 @@ GEM
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pdf-core (0.9.0)
-    pg (1.4.5)
+    pg (1.4.6)
     prawn (2.4.0)
       pdf-core (~> 0.9.0)
       ttfunk (~> 1.7)
     public_suffix (5.0.1)
-    puma (6.1.0)
+    puma (6.1.1)
       nio4r (~> 2.0)
     racc (1.6.2)
-    rack (2.2.6.2)
+    rack (2.2.6.3)
     rack-test (2.0.2)
       rack (>= 1.3)
     rails (7.0.4.2)
@@ -277,7 +277,7 @@ GEM
       rake (>= 12.2)
       thor (~> 1.0)
       zeitwerk (~> 2.5)
-    raindrops (0.20.0)
+    raindrops (0.20.1)
     rake (13.0.6)
     regexp_parser (2.7.0)
     reline (0.3.2)
@@ -320,7 +320,7 @@ GEM
     tilt (2.1.0)
     timeout (0.3.2)
     ttfunk (1.7.0)
-    turbo-rails (1.3.3)
+    turbo-rails (1.4.0)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
