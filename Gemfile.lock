@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: f1cb9bf46efe0df6963f2e6697183dc23fe30f9f
+  revision: 216f671cbf5e97742ab2d1cc6d90b42266ba401e
   branch: main
   specs:
     msip (2.2.0.beta1)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 44edd8e2c84bc540f9779c0e1f82b615f310f367
+  revision: c7c4a61ff211b3114dd75745ce8f1fd3890b6c49
   branch: main
   specs:
     sal7711_gen (2.2.0.beta1)
