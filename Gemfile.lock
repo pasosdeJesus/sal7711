@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 216f671cbf5e97742ab2d1cc6d90b42266ba401e
+  revision: ce832af4e98368bf7a71a2da09f8bb9bd3b6f7e6
   branch: main
   specs:
     msip (2.2.0.beta1)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: c7c4a61ff211b3114dd75745ce8f1fd3890b6c49
+  revision: de0d78ec6be8c9fb2241c762e23062744646cae4
   branch: main
   specs:
     sal7711_gen (2.2.0.beta1)
@@ -280,7 +280,7 @@ GEM
     raindrops (0.20.1)
     rake (13.0.6)
     regexp_parser (2.7.0)
-    reline (0.3.2)
+    reline (0.3.3)
       io-console (~> 0.5)
     responders (3.1.0)
       actionpack (>= 5.2)
@@ -395,4 +395,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   2.4.9
+   2.4.10
