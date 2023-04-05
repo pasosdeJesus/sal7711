@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: aaf5668d2b1c321853cb3f4561fef37de19105f7
+  revision: 3f038fea927f1d9bdeaa3d87d2d657e04a79438a
   branch: conv2
   specs:
     msip (2.2.0.beta2)
@@ -48,10 +48,10 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 6cb7246f0e66266f7bd3ded4c39d8e30ba78a788
+  revision: ba2512ec6fd6cfca9870c132e694a4af9e8f246c
   branch: conv2
   specs:
-    sal7711_gen (2.2.0.beta1)
+    sal7711_gen (2.2.0.beta2)
       msip
       rails
 
