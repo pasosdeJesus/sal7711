@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: d94ee9373927902ec698fb610155fd149a6fb365
+  revision: 6cb7246f0e66266f7bd3ded4c39d8e30ba78a788
   branch: conv2
   specs:
     sal7711_gen (2.2.0.beta1)
