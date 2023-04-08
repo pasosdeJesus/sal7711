@@ -28,8 +28,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 3f038fea927f1d9bdeaa3d87d2d657e04a79438a
-  branch: conv2
+  revision: fe87198e3c81056cda121f744f5f96694fda2e3f
+  branch: main
   specs:
     msip (2.2.0.beta2)
       cancancan (~> 3)
@@ -48,8 +48,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: ba2512ec6fd6cfca9870c132e694a4af9e8f246c
-  branch: conv2
+  revision: bc12cff0052c10183438ca7dca83e4a198750fef
+  branch: main
   specs:
     sal7711_gen (2.2.0.beta2)
       msip
