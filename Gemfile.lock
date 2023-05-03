@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: e6bd731480ca60c7cf06e5423c529a7835023d1c
+  revision: e7844bd5e88552c35f4dd196caee48c29b9a530c
   branch: main
   specs:
     msip (2.2.0.beta2)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 3a2bece7d3928762e1b9923c950ee1fb79604e6b
+  revision: e446c8365e5038cb64dd7ac29bbe8fa172eb8c13
   branch: main
   specs:
     sal7711_gen (2.2.0.beta2)
@@ -215,7 +215,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2023.0218.1)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.1)
+    mini_portile2 (2.8.2)
     minitest (5.18.0)
     msgpack (1.7.0)
     net-imap (0.3.4)
@@ -233,7 +233,7 @@ GEM
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pdf-core (0.9.0)
-    pg (1.5.2)
+    pg (1.5.3)
     prawn (2.4.0)
       pdf-core (~> 0.9.0)
       ttfunk (~> 1.7)
@@ -347,7 +347,7 @@ GEM
     will_paginate (3.3.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.7)
+    zeitwerk (2.6.8)
 
 PLATFORMS
   x86_64-openbsd
