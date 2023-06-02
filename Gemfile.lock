@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 4b337148f544220894d53fc2d27a4d681a50ca1b
+  revision: 8ae241188f78f57eac278730f4e573720240bcc9
   branch: main
   specs:
     msip (2.2.0.beta2)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: de595b5eaecac77b66aa14352356d77909b53596
+  revision: fc317ae09b71752017006080a1ba911a1faf580a
   branch: main
   specs:
     sal7711_gen (2.2.0.beta2)
@@ -188,7 +188,7 @@ GEM
     ffi (1.15.5)
     globalid (1.1.0)
       activesupport (>= 5.0)
-    i18n (1.13.0)
+    i18n (1.14.0)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
     irb (1.6.4)
