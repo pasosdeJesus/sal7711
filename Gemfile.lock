@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: cacd101e7d996071b667ffef10718f5eee64780a
+  revision: df4a577bae439905a93451d9d9624a01d69f3485
   branch: main
   specs:
     msip (2.2.0.beta2)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 2ac135b901f2f8c2814a43289cb59954816b9a80
+  revision: 521d5416246eabe8a5d144be31a5ed7067612502
   branch: main
   specs:
     sal7711_gen (2.2.0.beta2)
@@ -240,7 +240,7 @@ GEM
     public_suffix (5.0.1)
     puma (6.3.0)
       nio4r (~> 2.0)
-    racc (1.6.2)
+    racc (1.7.0)
     rack (2.2.7)
     rack-test (2.1.0)
       rack (>= 1.3)
