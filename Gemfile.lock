@@ -28,10 +28,10 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 0c9a6fab4a43f436a2d68681337ce03fab68d28f
+  revision: c832165fa1e103ed52eba7afd39ab9be2f2e708f
   branch: main
   specs:
-    msip (2.2.0.beta2)
+    msip (2.2.0.beta4)
       cancancan (~> 3)
       devise (~> 4)
       devise-i18n (~> 1)
@@ -48,10 +48,10 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 2f69f302dda34bd5a8af9f49c7c8e935208fe057
+  revision: c26b3351408177a386db91086b57e9d22be1eb88
   branch: main
   specs:
-    sal7711_gen (2.2.0.beta2)
+    sal7711_gen (2.2.0.beta4)
       msip
       rails
 
@@ -155,7 +155,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    colorize (0.8.1)
+    colorize (1.0.1)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     cuprite (0.14.3)
@@ -196,7 +196,7 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    jsbundling-rails (1.1.1)
+    jsbundling-rails (1.1.2)
       railties (>= 6.0.0)
     kgio (2.11.4)
     lazybox (1.1.5)
