@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: b3813de4742a5a907c89232806c8df484f1f8948
+  revision: 808e9a3efe20e6b4824b1e72e78542e0e1861ba1
   branch: main
   specs:
     msip (2.2.0.beta4)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: f715a00ec666d54d245f050b5b1f2b706f3331ee
+  revision: aa39e93d76eaa46b5f63ca8dc1e7ad9e87ad9143
   branch: main
   specs:
     sal7711_gen (2.2.0.beta4)
@@ -129,7 +129,7 @@ GEM
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
-    bcrypt (3.1.18)
+    bcrypt (3.1.19)
     bigdecimal (3.1.4)
     bindex (0.8.1)
     bootsnap (1.16.0)
@@ -155,7 +155,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    colorize (1.0.1)
+    colorize (1.0.5)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     cuprite (0.14.3)
@@ -319,7 +319,7 @@ GEM
       climate_control (>= 0.0.3, < 1.0)
     thor (1.2.2)
     tilt (2.2.0)
-    timeout (0.3.2)
+    timeout (0.4.0)
     ttfunk (1.7.0)
     turbo-rails (1.4.0)
       actionpack (>= 6.0.0)
