@@ -37,7 +37,7 @@ module Sal7711
 
     #msip
     config.x.formato_fecha = ENV.fetch(
-      'SIP_FORMATO_FECHA', 'dd/mm/yyyy')
+      'MSIP_FORMATO_FECHA', 'dd/mm/yyyy')
    
     #sal7711
     config.x.url_colchon = ENV.fetch(
