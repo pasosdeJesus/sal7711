@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: e2391fadd3fabfbb73041a3bedf23ba99fcb91a7
+  revision: 7b33437de555def9a3e6929207d84a9b78c9036f
   branch: main
   specs:
     msip (2.2.0.beta4)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 20e0dcc1e4a6025a8ee44b11505dcf688d25e3ab
+  revision: 6d0fc7314bcd8868e2ad48a5745d7f0c0c93afd8
   branch: main
   specs:
     sal7711_gen (2.2.0.beta4)
@@ -191,7 +191,7 @@ GEM
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
-    irb (1.7.3)
+    irb (1.7.4)
       reline (>= 0.3.6)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
@@ -397,4 +397,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   2.4.16
+   2.4.17
