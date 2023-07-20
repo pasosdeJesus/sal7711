@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 7b33437de555def9a3e6929207d84a9b78c9036f
+  revision: 3066795ce678d30ada62a33b479edb1b61b917ed
   branch: main
   specs:
     msip (2.2.0.beta4)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 6d0fc7314bcd8868e2ad48a5745d7f0c0c93afd8
+  revision: aaee845235319a3c79224890e70d9c1518e8887e
   branch: main
   specs:
     sal7711_gen (2.2.0.beta4)
@@ -215,9 +215,9 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2023.0218.1)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.2)
+    mini_portile2 (2.8.4)
     minitest (5.18.1)
-    msgpack (1.7.1)
+    msgpack (1.7.2)
     net-imap (0.3.6)
       date
       net-protocol
