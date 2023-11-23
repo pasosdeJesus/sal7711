@@ -28,8 +28,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 2aa8302570f55447d741cb20b90f02a1f7e96712
-  branch: renclase
+  revision: 932966920f125f0f47e37ace5574ec80ca7a8366
+  branch: main
   specs:
     msip (2.2.0.beta4)
       cancancan (~> 3)
@@ -48,8 +48,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 6c6eb789831b1c191a8cd140ced82c3a84eec29e
-  branch: renclase
+  revision: 61b7fe4fd901cc521ee9b0ef32c66f83291af538
+  branch: main
   specs:
     sal7711_gen (2.2.0.beta4)
       msip
@@ -311,7 +311,7 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
-    spring (4.1.2)
+    spring (4.1.3)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
