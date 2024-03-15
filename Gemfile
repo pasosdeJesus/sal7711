@@ -65,11 +65,11 @@ gem "will_paginate" # Listados en páginas
 # lógico y no alfabetico como las gemas anteriores) 
 
 gem "msip", # Motor generico
-  git: "https://gitlab.com/pasosdeJesus/msip.git", branch: "main"
+  git: "https://gitlab.com/pasosdeJesus/msip.git", branch: "v2.2"
   #path: "../msip"
 
 gem "sal7711_gen", # Motor de archivo de prensa
-  git: "https://gitlab.com/pasosdeJesus/sal7711_gen.git", branch: "main"
+  git: "https://gitlab.com/pasosdeJesus/sal7711_gen.git", branch: "v2.2"
   #path: "../sal7711_gen"
 
 

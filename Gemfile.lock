@@ -28,10 +28,10 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: aafe487e6d7c568918452f6104d54d84927d317d
-  branch: main
+  revision: b4916ff97261dd5790dd1efe5e471abc301460d3
+  branch: v2.2
   specs:
-    msip (2.2.0.beta4)
+    msip (2.2.0.beta5)
       cancancan (~> 3)
       devise (~> 4)
       devise-i18n (~> 1)
@@ -48,8 +48,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 6209a6fbd9fe1c82e78ce2ae5b81a3b2eb2f87fd
-  branch: main
+  revision: 0eb9d8d31af8e6921e76ea4451647f8b6c76dc41
+  branch: v2.2
   specs:
     sal7711_gen (2.2.0.beta4)
       msip
@@ -140,18 +140,18 @@ GEM
       execjs (~> 2.0)
     base64 (0.2.0)
     bcrypt (3.1.20)
-    bigdecimal (3.1.6)
+    bigdecimal (3.1.7)
     bindex (0.8.1)
-    bootsnap (1.17.1)
+    bootsnap (1.18.3)
       msgpack (~> 1.2)
     builder (3.2.4)
     camertron-eprun (1.1.1)
     cancancan (3.5.0)
-    capybara (3.39.2)
+    capybara (3.40.0)
       addressable
       matrix
       mini_mime (>= 0.1.3)
-      nokogiri (~> 1.8)
+      nokogiri (~> 1.11)
       rack (>= 1.6.0)
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
@@ -210,7 +210,7 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    jsbundling-rails (1.2.2)
+    jsbundling-rails (1.3.0)
       railties (>= 6.0.0)
     kgio (2.11.4)
     lazybox (1.1.5)
@@ -242,12 +242,12 @@ GEM
     net-smtp (0.4.0.1)
       net-protocol
     nio4r (2.7.0)
-    nokogiri (1.16.0)
+    nokogiri (1.16.2)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pdf-core (0.9.0)
-    pg (1.5.4)
+    pg (1.5.6)
     prawn (2.4.0)
       pdf-core (~> 0.9.0)
       ttfunk (~> 1.7)
@@ -257,7 +257,7 @@ GEM
     puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.7.3)
-    rack (2.2.8)
+    rack (2.2.8.1)
     rack-session (1.0.2)
       rack (< 3)
     rack-test (2.1.0)
@@ -290,7 +290,7 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
-    rails-i18n (7.0.8)
+    rails-i18n (7.0.9)
       i18n (>= 0.7, < 2)
       railties (>= 6.0.0, < 8)
     railties (7.1.3)
@@ -424,4 +424,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   2.5.5
+   2.5.6
