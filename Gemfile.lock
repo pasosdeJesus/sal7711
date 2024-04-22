@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: b4916ff97261dd5790dd1efe5e471abc301460d3
+  revision: 9ad803fbf57846d880d6c8d5ef50ca756ffd2697
   branch: v2.2
   specs:
     msip (2.2.0.beta5)
@@ -48,10 +48,10 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 0eb9d8d31af8e6921e76ea4451647f8b6c76dc41
+  revision: 46c7dfb4db848e6f6daa24001ce50fd59c46c277
   branch: v2.2
   specs:
-    sal7711_gen (2.2.0.beta4)
+    sal7711_gen (2.2.0.beta5)
       msip
       rails
 
@@ -173,10 +173,10 @@ GEM
       capybara (~> 3.0)
       ferrum (~> 0.14.0)
     date (3.3.4)
-    debug (1.9.1)
+    debug (1.9.2)
       irb (~> 1.10)
       reline (>= 0.3.8)
-    devise (4.9.3)
+    devise (4.9.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0)
@@ -242,7 +242,7 @@ GEM
     net-smtp (0.4.0.1)
       net-protocol
     nio4r (2.7.0)
-    nokogiri (1.16.2)
+    nokogiri (1.16.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     orm_adapter (0.5.0)
@@ -257,7 +257,7 @@ GEM
     puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.7.3)
-    rack (2.2.8.1)
+    rack (2.2.9)
     rack-session (1.0.2)
       rack (< 3)
     rack-test (2.1.0)
@@ -331,7 +331,7 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
-    spring (4.1.3)
+    spring (4.2.0)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -424,4 +424,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   2.5.6
+   2.5.9
