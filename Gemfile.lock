@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 54f056503d1fe1ca997101585cfa0a6d080ad9af
+  revision: fec412ce16b7b805abf634dbe3a276aba2c9abe6
   branch: v2.2
   specs:
     msip (2.2.0.beta6)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 35e886d8d2dc21b3df0d076588c768067f6dd62e
+  revision: 1726aaa4d81cb2e4a0a1f7349d8b0a123a4f672b
   branch: v2.2
   specs:
     sal7711_gen (2.2.0.beta5)
@@ -242,7 +242,7 @@ GEM
     net-smtp (0.4.0.1)
       net-protocol
     nio4r (2.7.0)
-    nokogiri (1.16.4)
+    nokogiri (1.16.5)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     orm_adapter (0.5.0)
