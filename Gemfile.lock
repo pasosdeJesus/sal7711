@@ -28,10 +28,10 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: cb2ca677c79f8f386ad45819fd59b0196a1dd04b
+  revision: e80002e10f5b8ee07d7ec15b2c5426ef8aa5348a
   branch: v2.2
   specs:
-    msip (2.2.0.beta6)
+    msip (2.2.0.beta7)
       cancancan (~> 3)
       devise (~> 4)
       devise-i18n (~> 1)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 5b01aa6e2f93146f5ec4ed050cd1116f130056e3
+  revision: 0e68b999ae1064017bb7ff818c9eb98fccd01d01
   branch: v2.2
   specs:
     sal7711_gen (2.2.0.beta6)
@@ -424,4 +424,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   2.5.19
+   2.5.20
